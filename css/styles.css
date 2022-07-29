@@ -277,7 +277,7 @@ h2 {
     padding: 10px 32px;
 
 
-        transition-property: background-color, box-shadow;
+        transition-property: background-color, box-shadow, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -289,6 +289,8 @@ h2 {
 .hero-btn:hover, .hero-btn:focus {
 
     background: #188CE8;
+    border: #188CE8 solid;
+    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 }
@@ -917,9 +919,11 @@ transition: opacity 600ms ease-out, visibility 600ms ease-out;
 
     transform: translate(-50%,-50%) scale(1) rotate(0);
 
-
     width: 520px;
     height: 580px;
+    padding: 30px;
+
+
     background-color: #FFFFFF;
     box-shadow: 
     0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -959,3 +963,81 @@ transition: opacity 600ms ease-out, visibility 600ms ease-out;
    
    cursor: pointer;
 }
+
+/* Modal Form */
+
+.form-modal {
+    text-align: center;
+}
+
+
+.form-title {
+    font-family: 'Roboto';
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    display: block;
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 12px;
+}
+
+.form-label {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-label:last-child {
+    margin-bottom: 0px;
+}
+
+.form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.form-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.form-agreement {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    display: block;
+}
+
+.form-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0px;
+
+    padding: 10px 55px;
+
+    
+    font-family: 'Roboto'; 
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: #2196F3;
+}
+
