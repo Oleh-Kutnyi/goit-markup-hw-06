@@ -647,7 +647,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="20" height="20">
+          <svg class="modal-btn-icon" width="28" height="18">
             <use href="./images/icons.svg#xmark"></use>
           </svg>
         </button>
@@ -657,49 +657,49 @@
         <form name="form-modal" class="form-modal" autocomplete="off" novalidate>
           <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
           <div class="form-group" role="group">
+            
             <label class="form-label">
-              <input type="text" name="user-name" class="form-input" />
-              <span class="form-span">Имя</span>
-              <svg class="form-icon" width="20" height="20">
-                <use href="./images/icons.svg#user"></use>
-              </svg>
+                
+                <span class="form-text">Имя</span>
+            
+                    <input type="text" name="user-name" class="form-input" />
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#user"></use>
+                    </svg>
+                
             </label>
 
             <label class="form-label">
+                <span class="form-text">Телефон</span>
               <input type="tel" name="user-phone" class="form-input"/>
-              <span class="form-span">Телефон</span>
-              <svg class="form-icon" width="20" height="20">
+              <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone-modal"></use>
               </svg>
             </label>
 
             <label class="form-label">
+                <span class="form-text">Почта</span>
               <input type="email" name="user-email" class="form-input"/>
-              <span class="form-span">Почта</span>
-              <svg class="form-icon" width="20" height="20">
+              <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#letter"></use>
               </svg>
             </label>
 
             <label class="form-label">
-              <span class="form-span">Комментарий</span>
-              <textarea
-                class="form-label-textarea"
-                type="text"
-                placeholder="Введите текст"
-              ></textarea>
+              <span class="form-text">Комментарий</span>
+              <textarea placeholder="Введите текст" class="form-label-textarea" type="text"></textarea>
             </label>
           </div>
 
           <label class="form-agreement">
-            <input type="checkbox" name="agreement" />
-            <svg class="form-agr-icon" width="20" heigth="20">
-              <use href="./images/icons.svg#emptymark"></use>
-              <use href="./images/icons.svg#checkmark"></use>
+            <input class="form-checkbox viasualy-hidden" type="checkbox" name="agreement" />
+            <svg class="form-agr-icon" width="16" heigth="16">
+              <use class="form-icon-emptymark" href="./images/icons.svg#emptymark"></use>
+              <use class="form-icon-checkmark" href="./images/icons.svg#checkmark"></use>
             </svg>
 
-            <span>Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
+            <span class="form-agr-text ">Соглашаюсь с рассылкой и принимаю
+              <a href="" class="form-agr-link">Условия договора</a>
             </span>
           </label>
 
